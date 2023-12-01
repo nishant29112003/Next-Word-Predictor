@@ -14,7 +14,7 @@ components:
     spacing_above: large, spacing_below: small}
   type: Label
   layout_properties: {slot: default}
-- name: text_area_1
+- name: text_area
   properties: {height: 80.39996337890625}
   type: TextArea
   layout_properties: {slot: default}

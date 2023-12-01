@@ -13,5 +13,7 @@ class Form1(Form1Template):
     pass
 
   def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    pass
+    predict_value = anvil.server.call('prediction',self.text_area.text)
+    if predict_value:
+      self.text_area.text = predict_value.capitalize()
+
