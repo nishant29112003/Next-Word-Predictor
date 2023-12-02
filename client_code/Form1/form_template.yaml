@@ -18,6 +18,14 @@ components:
   properties: {height: 80.39996337890625}
   type: TextArea
   layout_properties: {slot: default}
+- name: label_3
+  properties: {text: 'Enter Limit of Texts:', bold: false, italic: true, underline: true}
+  type: Label
+  layout_properties: {slot: default}
+- name: limit_text
+  properties: {}
+  type: TextBox
+  layout_properties: {slot: default}
 - name: button_1
   properties: {text: Predict, bold: true, spacing_above: medium}
   type: Button
