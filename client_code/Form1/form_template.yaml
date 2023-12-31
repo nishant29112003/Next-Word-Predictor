@@ -31,4 +31,12 @@ components:
   type: Button
   layout_properties: {slot: default}
   event_bindings: {click: button_1_click}
+- name: label_4
+  properties: {text: 'Predicted Texts:'}
+  type: Label
+  layout_properties: {slot: default}
+- name: rich_text_1
+  properties: {}
+  type: RichText
+  layout_properties: {slot: default}
 is_package: true
