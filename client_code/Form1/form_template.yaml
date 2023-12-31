@@ -31,13 +31,4 @@ components:
   type: Button
   layout_properties: {slot: default}
   event_bindings: {click: button_1_click}
-- name: text_box_1
-  properties: {}
-  type: TextBox
-  layout_properties: {slot: default}
-  event_bindings: {pressed_enter: text_box_1_pressed_enter}
-- name: text_box_2
-  properties: {}
-  type: TextBox
-  layout_properties: {slot: default}
 is_package: true

@@ -1,5 +1,6 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+import anvil.server
 
 class Form1(Form1Template):
   def __init__(self, **properties):
@@ -13,7 +14,6 @@ class Form1(Form1Template):
     pass
 
   def button_1_click(self, **event_args):
-    predict_value = anvil.server.call('predict_next_word',self.text_area.text,self.limit_text.text)
-    if predict_value:
-      self.text_box_1.text = predict_value.capitalize()
+    anvil.server.call('predict_next_word',self.text_area.text,self.limit_text.text)
+  
 
