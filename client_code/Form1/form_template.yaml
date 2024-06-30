@@ -1,17 +1,18 @@
 container:
   type: HtmlTemplate
-  properties: {html: "<center style=\"font-style:italic; color:#888; margin: 3em;\"\
-      >\n  (Insert your custom HTML here)\n</center>\n<div anvil-slot=\"default\"\
-      ></div>"}
+  properties:
+    html: |-
+      <center style="font-style:italic; color:#888; margin: 3em;">
+        (Insert your custom HTML here)
+      </center>
+      <div anvil-slot="default"></div>
 components:
 - name: label_1
-  properties: {italic: true, underline: true, text: Word Predictor, bold: true, align: center,
-    font: '', font_size: 40}
+  properties: {italic: true, underline: true, text: Word Predictor, bold: true, align: center, font: '', font_size: 40}
   type: Label
   layout_properties: {slot: default}
 - name: label_2
-  properties: {text: 'Enter the Text Here:', italic: true, underline: true, font_size: 20,
-    spacing_above: large, spacing_below: small}
+  properties: {text: 'Enter the Text Here:', italic: true, underline: true, font_size: 20, spacing_above: large, spacing_below: small}
   type: Label
   layout_properties: {slot: default}
 - name: text_area
